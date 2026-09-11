@@ -1,40 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HeyReggie Support</title>
+<title>Qwadd - Support</title>
 <style>
-  body { font-family: -apple-system, Arial, sans-serif; background: #000000; color: #FBF9F4; max-width: 720px; margin: 0 auto; padding: 40px 24px; line-height: 1.6; }
-  h1 { font-size: 2rem; letter-spacing: 0.5px; }
-  h1 span { color: #F1B82D; }
-  h2 { font-size: 1.15rem; margin-top: 2em; color: #FBF9F4; }
-  a { color: #F1B82D; }
-  .q { font-weight: bold; margin-top: 18px; color: #FBF9F4; }
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 40px 22px; line-height: 1.55;
+    color: #16181c; background: #ffffff; }
+  @media (prefers-color-scheme: dark) { body { color: #e7e9ee; background: #15171c; } a { color: #ff7a1a; } }
+  h1 { font-size: 30px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 28px; }
+  .muted { color: #6b7280; }
+  a { color: #d75a00; }
 </style>
 </head>
 <body>
-<h1><span>HeyReggie</span> Support</h1>
-<p>HeyReggie helps you get to class on time and see what's due. Add your class schedule, calibrate your campus buildings, and get a live "leave by" time and a heads-up notification before each class.</p>
+  <h1>Qwadd Support</h1>
+  <p class="muted">Last updated: August 29, 2026</p>
 
-<h2>Common questions</h2>
+  <p>Need help with Qwadd, found a bug, or have a feature request? Email
+  <a href="mailto:timothy.willmann.71@gmail.com">timothy.willmann.71@gmail.com</a> and I'll get back to you.</p>
 
-<p class="q">How do I get started?</p>
-<p>Add your classes in the Classes tab, then open Places and tap "Set to my spot" while standing at each building to calibrate its location. The Now tab will then show a live leave-by time for your next class.</p>
+  <h2>Connecting Canvas</h2>
+  <p>Qwadd reads your assignments from your Canvas Calendar Feed - a personal, read-only link, not a login.
+  In Canvas, go to Calendar, click Calendar Feed in the sidebar, copy the link, and paste it into Qwadd
+  under Canvas. The app never asks for your Canvas password or an API token, and any other .ics calendar
+  link (Google Calendar, etc.) works the same way.</p>
 
-<p class="q">Do I need to enable location?</p>
-<p>No. Without location, the Today and Now tabs still work using a building-to-building walk estimate based on your schedule. Location just makes the Now tab's estimate live and precise.</p>
+  <h2>Common questions</h2>
+  <p><strong>Do I need an account?</strong> No. Qwadd has no login and no server - everything stays on
+  your device.</p>
+  <p><strong>Is Qwadd a subscription?</strong> No. It's a one-time purchase.</p>
+  <p><strong>Why isn't my school in the list?</strong> Qwadd ships with a built-in list of colleges,
+  but you can set your own school name and colors manually if yours isn't listed yet.</p>
 
-<p class="q">How do I connect Canvas?</p>
-<p>Open the Canvas tab and follow the setup steps to generate a personal access token from your Canvas account settings, then paste it in. If your school has disabled student access tokens, contact your school's IT department about Canvas OAuth developer access.</p>
-
-<p class="q">Is my Canvas token safe?</p>
-<p>Yes - it's stored in your device's encrypted Keychain, never in plain settings storage, and never sent anywhere except directly to your Canvas server.</p>
-
-<p class="q">How do I disconnect Canvas or delete my data?</p>
-<p>Tap Disconnect in the Canvas tab to remove your token. Deleting the app removes all locally stored schedule and building data.</p>
-
-<h2>Contact</h2>
-<p>Need help or have feedback? Email <a href="mailto:timothy.willmann.71@gmail.com">timothy.willmann.71@gmail.com</a> and we'll get back to you.</p>
+  <h2>Privacy</h2>
+  <p>See the <a href="privacy.html">privacy policy</a> for details on what Qwadd does (and doesn't)
+  collect.</p>
 </body>
 </html>
